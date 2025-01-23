@@ -1,6 +1,6 @@
 # Terafence Website
 
-[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fwww.terafence.com)](https://www.terafence.com)
+[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fwww.terafence.com)](https://terafence.netlify.app/)
 
 A modern company website built using TypeScript, React, Vite, Tailwind CSS, and Framer Motion.
 
@@ -46,14 +46,4 @@ To run this project locally:
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
 
-## Contributing
 
-Contributions are welcome! Please fork this repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under [LICENSE].
-
-## Acknowledgments
-
-Special thanks to the creators of TypeScript, React, Vite, Tailwind CSS, and Framer Motion for their excellent libraries and tools.
