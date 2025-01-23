@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# Terafence Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fwww.terafence.com)](https://www.terafence.com)
 
-Currently, two official plugins are available:
+A modern company website built using TypeScript, React, Vite, Tailwind CSS, and Framer Motion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About Terafence
 
-## Expanding the ESLint configuration
+### Protecting What Matters Most
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The next generation of cybersecurity solutions for critical assets.
 
-- Configure the top-level `parserOptions` property like this:
+#### Who We Are
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+At Terafence, we believe that cybersecurity should be simple and failsafe. We offer innovative solutions to keep malware at bay and protect even the most outdated assets, just as we protect vulnerable populations from viruses. Founded by Indian industry leaders, Terafence Pvt. Ltd. (iTF) focuses on providing next-generation cybersecurity protection for critical assets like CCTV, IT, and OT networks. With technology licensed from Terafence Ltd., Israel, our products are proudly "Made in India."
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+#### Our Mission
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Our mission is to secure the ever-growing cyber-attack surface across industries by providing effective, reliable, and future-proof cybersecurity solutions.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Next-Generation Technology
+
+- **Secure Networks**: Advanced protection for IT and OT networks, keeping your data safe.
+- **CCTV Protection**: Protect critical surveillance systems from evolving cyber threats.
+- **Future-Proof Solutions**: Innovative, scalable solutions for today and tomorrow's cybersecurity needs.
+
+## Features
+
+- Built with TypeScript for enhanced type safety and maintainability
+- Powered by React for efficient rendering and component management
+- Utilizes Vite for rapid development and optimized builds
+- Styled with Tailwind CSS for consistent and customizable design
+- Enhanced animations and interactions using Framer Motion
+
+## Contact Us
+
+- Phone: +91 98111 12533
+- Email: info@terafence.com
+- Location: 209, Suncity Success Tower, Sector-65, Gurgaon-122 018, Haryana, India
+
+## Development Setup
+
+To run this project locally:
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under [LICENSE].
+
+## Acknowledgments
+
+Special thanks to the creators of TypeScript, React, Vite, Tailwind CSS, and Framer Motion for their excellent libraries and tools.
