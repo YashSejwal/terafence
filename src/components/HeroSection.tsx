@@ -4,6 +4,7 @@ import hero from '../assets/iTFF.mp4'
 
 const HeroSection: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false)
+  const [showSnippet, setShowSnippet] = useState(true)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
@@ -11,6 +12,11 @@ const HeroSection: React.FC = () => {
       videoRef.current.play().catch((error) => console.error('Error playing video:', error))
     }
   }, [isPlaying])
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowSnippet(false), 3800) 
+    return () => clearTimeout(timer)  
+  }, [])
 
   const handleUserInteraction = () => setIsPlaying(true)
   const handleContextMenu = (e: React.MouseEvent) => e.preventDefault()
@@ -35,35 +41,28 @@ const HeroSection: React.FC = () => {
       </video>
       <div className="absolute inset-0 bg-black/50" />
       <div className="flex items-center justify-center absolute inset-0 z-10 px-4 py-16">
-        <div className="text-center max-w-4xl w-full">
-          <motion.h1
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-            transition={{ delay: 0.3, duration: 3.5 }}
-            className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4"
-          >
-            iTF: Security. Redefined.
-          </motion.h1>
-          <motion.p
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-            transition={{ delay: 0.6, duration: 2 }}
-            className="text-gray-300 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-8 max-w-md mx-auto"
-          >
-            Effortless protection for a complex world.
-          </motion.p>
-          <motion.button
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-            transition={{ delay: 0.9, duration: 1 }}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-md sm:text-lg lg:text-xl xl:text-2xl"
-          >
-            Learn More
-          </motion.button>
-        </div>
+        {showSnippet && (
+          <div className="text-center max-w-4xl w-full">
+            <motion.h1
+              initial="hidden"
+              animate="visible"
+              variants={variants}
+              transition={{ delay: 0.3, duration: 0.4 }}
+              className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4"
+            >
+              iTF:  Security. Redefined.
+            </motion.h1>
+            <motion.p
+              initial="hidden"
+              animate="visible"
+              variants={variants}
+              transition={{ delay: 0.6, duration: 3 }}
+              className="text-gray-300 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-8 max-w-md mx-auto"
+            >
+              Effortless protection for a complex world.
+            </motion.p>
+          </div>
+        )}
       </div>
     </section>
   )

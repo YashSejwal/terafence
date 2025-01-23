@@ -272,7 +272,7 @@ const NewsSection = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.7 }}
                         className="w-60 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-3 px-6 rounded-xl font-semibold flex items-center justify-center gap-2 group transition-all duration-300 shadow-md hover:shadow-xl"
-                      >
+                      > 
                         <span>Read Full Coverage</span>
                       </motion.button>
                     </div>
