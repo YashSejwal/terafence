@@ -8,6 +8,7 @@ import Statistics from "../components/Statistics";
 import Pentest from "../components/Pentest";
 import working from "../assets/working.gif";
 
+
 const handleUserInteraction = (e: React.MouseEvent) => {
   e.preventDefault();  
 }
@@ -68,11 +69,10 @@ const LandingPage = () => {
             <NewsSection />
           </div>
         </section>
-      </div>
-
-      <footer className="text-white w-full">
+        <footer className="text-white w-full">
         <Footer />
       </footer>
+      </div>
     </div>
   );
 };
